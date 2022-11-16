@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.form-box {
+  background-color: #063C4F;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  font-size: calc(10px + 2vmin);
+  color: aliceblue;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; 
+  text-align: left;
+  min-width: 30%;
+}
+
+.logo-container img {
+  max-height: 200px;
+  align-self: center;
+  transition: all 0.5s ease;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo-container:hover {
+  transform: scale(1.05);
+  transition: 0.1s ease; 
+}
+
+.logo-container text {
+  height: 0;
+  opacity: 0;
+  font-family: sans-serif;
+  font-size: 20px; 
+  font-weight: 50;
+  color: #E2FCA4;
+  transition-duration: 0.5s;
+}
+
+.logo-container:hover text {
+  opacity: 1;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.logo-container:hover img {
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+input {
+  background-color: aliceblue;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  min-width: 100%;
+  padding: 30px 50px;
+}
+
+label {
+  display: block;
+  font-family: sans-serif;
+  font-size: 20px; 
+  font-weight: 500;
+  margin: 10px 0px;
+}
+
+.invalid {
+  border: 3px solid #c72828;
+}
+
+.submitButton {
+  background-color: #E2FCA4;
+  color: navy;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  min-width: 100%;
+}
+
+.submitButton:hover {
+  transform: scale(1.01);
+  transition: 0.1s ease;  
+}
+
+.error-msg {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #dd5252;
+}
+
+.success-container {
+  background-color: #063C4F;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  font-size: calc(10px + 2vmin);
+  font-family: sans-serif;
+  font-weight: 500;
+  color: aliceblue;
+}
+
+.loader {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 3px solid #001440;
+  border-radius: 50%;
+  border-left-color: #E2FCA4;
+  animation: rotate 1s linear infinite;
+}
+
+.message {
+  transition-duration: 0.2s;
+}
+
+.back-link {
+  color: #E2FCA4 
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
