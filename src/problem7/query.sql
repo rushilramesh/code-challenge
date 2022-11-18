@@ -1,5 +1,5 @@
 SELECT
-    usd_address
+    usd_addresses.address
 FROM
     (
         SELECT
