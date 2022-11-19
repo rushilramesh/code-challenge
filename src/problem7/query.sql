@@ -20,4 +20,4 @@ FROM
             address
     ) AS usd_addresses
 WHERE
-    usd_address.usd_balance >= 500
+    usd_addresses.usd_balance >= 500
